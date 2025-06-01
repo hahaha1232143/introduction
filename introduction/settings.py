@@ -26,12 +26,13 @@ SECRET_KEY = 'django-insecure-+1-b(*de_1yt6gxqnoc&s1=6+7)frunby1$k81vskx5%k0%^pk
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = [".replit.dev", ".replit.app", "localhost"]
-CSRF_TRUSTED_ORIGINS = ["https://*.replit.dev", "https://*.replit.app", "http://localhost"]
+ALLOWED_HOSTS = [".replit.dev", ".replit.app", "localhost", "127.0.0.1"]
+CSRF_TRUSTED_ORIGINS = ["https://*.replit.dev", "https://*.replit.app", "http://localhost", "http://127.0.0.1"]
 
 # Application definition
 
 INSTALLED_APPS = [
+    'introduction',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
